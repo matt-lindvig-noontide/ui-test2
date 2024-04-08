@@ -26,11 +26,13 @@ import { ThemeProvider } from "@mui/material/styles";
 
 const SoftBox = forwardRef(
   ({ variant, bgColor, color, opacity, borderRadius, shadow, ...rest }, ref) => (
+    <ThemeProvider theme={theme}>
     <SoftBoxRoot
       {...rest}
       ref={ref}
       ownerState={{ variant, bgColor, color, opacity, borderRadius, shadow }}
     />
+    </ThemeProvider>
   )
 );
 

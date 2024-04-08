@@ -20,6 +20,9 @@ import PropTypes from "prop-types";
 
 // Custom styles for SoftBox
 import SoftBoxRoot from "./SoftBoxRoot"//".components/SoftBox/SoftBoxRoot";
+import theme from "../../assets/theme"
+import { ThemeProvider } from "@mui/material/styles";
+
 
 const SoftBox = forwardRef(
   ({ variant, bgColor, color, opacity, borderRadius, shadow, ...rest }, ref) => (
